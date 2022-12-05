@@ -1,27 +1,5 @@
-# javaScript-Quiz
-A timed quiz 
- User Story
 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+![Screen Shot 2022-12-04 at 11 09 00 PM](https://user-images.githubusercontent.com/105082689/205566224-72d65482-fb4c-41b2-a00b-b79edfd8914a.png)
 
 
-
-Acceptance Criteria
-
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-
-
-
-Mock-Up
+This was a real challenge for me and as it currently stands im still debugging and figureing out the best approach. 

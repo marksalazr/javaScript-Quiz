@@ -1,5 +1,5 @@
 var question =document.querySelector('#question');
-var choices=Array.from(document.querySelectorAll('choice-text'));
+var choices=Array.from(document.querySelectorAll('.choice-text'));
 var ProgressText=document.querySelector("#progressText");
 var scoreText=document.querySelector("#score");
 var progressBarFull =document.querySelector("#progressBarFull");
@@ -29,21 +29,21 @@ let questions =[
 }, 
 
 {
-    question: "this is a q---?",
+    question: "What color is the ocean?",
     choice1: "question",
-    choice2: "1",
-    choice3: "pee",
+    choice2: "blue",
+    choice3: "",
     choice4: "love",
-    answer: "simon",
+    answer: 2,
 },
 
 {
     question: "this is a,",
     choice1: "question",
-    choice2: "q",
+    choice2: "what",
     choice3: "1",
     choice4: "love",
-    answer: "simon",
+    answer: 1,
 }
 ]
 
@@ -61,7 +61,7 @@ getNewQuestion= () => {
       if(availableQuestions.length ===0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score )
 
-    //   return window.location.assign ('/end.html')
+    //   return window.location.assign must make anoher .html file
       }
       questionCounter++
       ProgressText.innerText =`QUESTION ${questionCounter} of ${MAX_QUESTIONS}`
@@ -70,7 +70,7 @@ getNewQuestion= () => {
       var questionIndex = Math.floor(Math.random()* availableQuestions.length);
       currentQuestion = availableQuestions[questionIndex];
       question.innerText = currentQuestion.question;  
-// prop here needs an s 
+
       choices.forEach(choice => {
         const number =choice.dataset['number']
         choice.innerText= currentQuestion['choice'+ number]
@@ -107,5 +107,10 @@ incrementScore= num =>{
     score =+ num 
     score.innerText=score
 }
+
+setInterval(() => {
+
+    
+}, 40000);
 
 startQuiz()
